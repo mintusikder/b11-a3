@@ -10,85 +10,88 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
               clifford: "#da373d",
-              buttonBg: rgb(23, 152, 0),
+              second: rgb(23, 152, 0),
             },
           },
         },
       };
     </script>
+    <link rel="stylesheet" href="./style/style.css">
   </head>
-  <body class="md:max-w-7xl mx-auto">
+  <body >
     <!-- nav content -->
-    <nav>
-      <div class="navbar bg-base-100 h-26">
-        <div class="navbar-start flex justify-around flex-row-reverse">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
+   <div class="bg-gradient-to-b from-white to-[#efeBE3]">
+    <nav class="md:max-w-7xl mx-auto ">
+        <div class="navbar bg-base-100 h-26">
+          <div class="navbar-start flex justify-around flex-row-reverse">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
             </div>
+            <a class="btn btn-ghost text-xl">
+              <img
+                class="md:w-28 w-18"
+                src="./c2-assets/logo-header.png"
+                alt=""
+              />
+            </a>
           </div>
-          <a class="btn btn-ghost text-xl">
-            <img
-              class="md:w-28 w-18"
-              src="./c2-assets/logo-header.png"
-              alt=""
-            />
-          </a>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Product</a></li>
+              <li><a>Services</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn mr-4">Login</a>
+            <a class="btn text-white bg-[#179800] register">Register</a>
+          </div>
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Product</a></li>
-            <li><a>Services</a></li>
-            <li><a>Contact us</a></li>
-          </ul>
+        <!-- banner contain -->
+        <div class="mt-12">
+          <!-- text contain -->
+          <div  class="text-center mb-5">
+            <h1 class="text-4xl font-bold mb-5">Freshness <span class="text-[#179800]">You Can</span> <br> <span class="text-[#179800]">Count</span> On, Prices You’ll Love!</h1>
+            <p>
+              Shop your daily essentials at unbeatable prices. From fresh produce
+              to pantry <br> staples, we’ve got you covered every day!
+            </p>
+          </div>
+          <!-- banner img -->
+          <div class="flex items-center  justify-center">
+              <img src="./c2-assets/hero-vegetables.png" alt="">
+          </div>
         </div>
-        <div class="navbar-end">
-          <a class="btn mr-4">Login</a>
-          <a class="btn">Register</a>
-        </div>
-      </div>
-      <!-- banner contain -->
-      <div class="mt-12">
-        <!-- text contain -->
-        <div  class="text-center mb-5">
-          <h1 class="text-4xl font-bold mb-5">Freshness You Can <br> Count On, Prices You’ll Love!</h1>
-          <p>
-            Shop your daily essentials at unbeatable prices. From fresh produce
-            to pantry <br> staples, we’ve got you covered every day!
-          </p>
-        </div>
-        <!-- banner img -->
-        <div class="flex items-center  justify-center">
-            <img src="./c2-assets/hero-vegetables.png" alt="">
-        </div>
-      </div>
-    </nav>
+      </nav>
+   </div>
     <main>
         <!-- Services card contain -->
-       <section class="mt-24 mb-24">
-        <div class="grid grid-cols-1 md:grid-cols-3 ">
+       <section class="mt-28 mb-24 md:max-w-7xl mx-auto">
+        <h1 class="text-3xl font-bold text-[#179800]  px-8">Services</h1>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-3 p-6">
             <!-- card-1 -->
-            <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="card bg-base-100 w-full  shadow-xl bg-[#efebe3]">
                 <figure class="px-10 pt-10">
                     <div class="avatar">
                         <div class="w-24 rounded-full">
@@ -101,36 +104,39 @@
                 </div>
               </div>
             <!-- card-2 -->
-            <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="card bg-base-100 w-full shadow-xl bg-[#efebe3]">
                 <figure class="px-10 pt-10">
                     <div class="avatar">
                         <div class="w-24 rounded-full">
-                          <img src="./c2-assets/service.png" />
+                          <img src="./c2-assets/delivery.png" />
                         </div>
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title font-bold">24/7 Services </h2>
+                  <h2 class="card-title font-bold">Fast Delivery </h2>
                   <p>If a dog chews shoes whose shoes does he choose?</p>
                 </div>
               </div>
             <!-- card-3 -->
-            <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="card bg-base-100 w-full shadow-xl bg-[#efebe3]">
                 <figure class="px-10 pt-10">
                     <div class="avatar">
                         <div class="w-24 rounded-full">
-                          <img src="./c2-assets/service.png" />
+                          <img src="./c2-assets/healthy.png" />
                         </div>
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title font-bold">24/7 Services </h2>
+                  <h2 class="card-title font-bold">Healthy Products  </h2>
                   <p>If a dog chews shoes whose shoes does he choose?</p>
                 </div>
               </div>
         </div>
        </section>
        <!-- Popular Products -->
-        <section>
-            
+        <section class="bg-[#efebe3] h-[775px] w-[100%]">
+              <div class="md:max-w-7xl mx-auto">
+                <h1  class="text-3xl font-bold text-[#179800] mb-8" >Popular Products</h1>
+                
+              </div>
         </section>
     </main>
   </body>
