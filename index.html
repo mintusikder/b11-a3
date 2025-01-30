@@ -17,13 +17,56 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              buttonBg: rgb(23, 152, 0),
             },
           },
         },
       };
     </script>
   </head>
-  <body>
-    
+  <body class="md:max-w-7xl mx-auto">
+    <!-- nav content -->
+    <nav>
+      <div class="navbar bg-base-100 h-26">
+        <div class="navbar-start flex justify-around flex-row-reverse">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+          </div>
+          <a class="btn btn-ghost text-xl">
+            <img
+              class="md:w-28 w-18"
+              src="./c2-assets/logo-header.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Product</a></li>
+            <li><a>Services</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn mr-4">Login</a>
+          <a class="btn ">Register</a>
+        </div>
+      </div>
+    </nav>
   </body>
 </html>
