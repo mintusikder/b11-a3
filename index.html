@@ -27,67 +27,57 @@
   </head>
   <body >
     <!-- nav content -->
-   <div class="bg-gradient-to-b from-white to-[#efeBE3]">
-    <nav class="md:max-w-7xl mx-auto ">
-        <div class="navbar bg-base-100 h-26">
-          <div class="navbar-start flex justify-around flex-row-reverse">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
+    <div class="bg-gradient-to-b from-white to-[#efeBE3]">
+      <nav class="md:max-w-7xl mx-auto px-4">
+          <!-- Desktop Navbar -->
+          <div class="hidden md:flex justify-between items-center bg-base-100 h-20 py-4">
+              <!-- Left Side -->
+              <div class="flex items-center  gap-6">
+                  <a href="#" class="text-xl">
+                      <img class="w-24 md:w-28" src="./c2-assets/logo-header.png" alt="Logo">
+                  </a>
+              
               </div>
-            </div>
-            <a class="btn btn-ghost text-xl">
-              <img
-                class="md:w-28 w-18"
-                src="./c2-assets/logo-header.png"
-                alt=""
-              />
-            </a>
+  
+              <!-- Right Side -->
+              <div class="flex items-center space-x-4 ">
+                <ul class="hidden lg:flex  space-x-6 mr-[200px]">
+                  <li><a href="#" class="text-[#111111] hover:text-[#179800] font-medium">Product</a></li>
+                  <li><a href="#" class="text-[#111111] hover:text-[#179800] font-medium">Services</a></li>
+                  <li><a href="#" class="text-[#111111] hover:text-[#179800] font-medium">Contact us</a></li>
+              </ul>
+                  <i class="fa-solid fa-magnifying-glass text-2xl text-gray-700 hover:text-[#179800] cursor-pointer"></i>
+                  <i class="fa-solid fa-cart-shopping text-2xl text-gray-700 hover:text-[#179800] cursor-pointer"></i>
+                  <a class="border border-green-600 px-6 py-2 rounded-md hover:bg-green-100 transition-all">Login</a>
+                  <a class="bg-[#179800] text-white px-6 py-2 rounded-md hover:bg-green-700 transition-all">Register</a>
+              </div>
           </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a class="text-[#111111] hover:text-[#179800] font-[400]">Product</a></li>
-              <li><a>Services</a></li>
-              <li><a>Contact us</a></li>
-            </ul>
+  
+          <!-- Mobile Navbar -->
+          <div class="md:hidden max-w-[94%] mx-auto py-6 flex justify-between items-center">
+              <img class="w-24" src="./c2-assets/logo-header.png" alt="Logo">
+              <i class="fa-solid fa-bars text-2xl cursor-pointer"></i>
           </div>
-          <div class="navbar-end">
-            <i class="fa-solid fa-magnifying-glass text-2xl"></i>
-            <i class="fa-solid fa-cart-shopping px-4 text-2xl"></i>
-            <a class="btn mr-4 border border-green-600 px-8">Login</a>
-            <a class=" btn text-white bg-[#179800] px-8 register">Register</a>
+  
+          <!-- Banner Section -->
+          <div class="mt-12 text-center">
+              <h1 class="text-4xl font-bold mb-5 animate-bounce">
+                  Freshness <span class="text-[#179800]">You Can</span> <br> 
+                  <span class="text-[#179800]">Count</span> On, Prices You’ll Love!
+              </h1>
+              <p class="text-gray-700">
+                  Shop your daily essentials at unbeatable prices. From fresh <br class="hidden md:block"> 
+                  produce to pantry staples, we’ve got you covered every day!
+              </p>
+  
+              <!-- Banner Image -->
+              <div class="flex items-center justify-center mt-6">
+                  <img class="max-w-[90%] md:max-w-lg" src="./c2-assets/hero-vegetables.png" alt="Hero Vegetables">
+              </div>
           </div>
-        </div>
-        <!-- banner contain -->
-        <div class="mt-12">
-          <!-- text contain -->
-          <div  class="text-center mb-5">
-            <h1 class="text-4xl font-bold mb-5 animate-bounce">Freshness <span class="text-[#179800] ">You Can</span> <br> <span class="text-[#179800]">Count</span> On, Prices You’ll Love!</h1>
-            <p>
-              Shop your daily essentials at unbeatable prices. From fresh <br> produce
-              to pantry  staples, we’ve got you covered every day!
-            </p>
-          </div>
-          <!-- banner img -->
-          <div class="flex items-center  justify-center">
-              <img src="./c2-assets/hero-vegetables.png" alt="">
-          </div>
-        </div>
       </nav>
-   </div>
+  </div>
+  
     <main>
         <!-- Services card contain -->
        <section class="mt-28 mb-24 md:max-w-7xl mx-auto">
@@ -134,6 +124,7 @@
               </div>
         </div>
        </section>
+       
        <!-- Popular Products -->
         <section class="bg-[#efebe3] md:h-[675px] h-[1200px] w-[100%] ">
               <div class="md:max-w-7xl mx-auto py-24">
@@ -154,7 +145,7 @@
                           <div class=" flex items-center justify-around md:w-[250px] w-[200px] h-[100px] bg-[#ffffff] rounded-xl">
                                 <!-- image -->
                                 <div>
-                                    <img class="w-12" src="./c2-assets/delivery.png" alt="">
+                                    <img class="w-16 rounded bg-[#efebe3]" src="./c2-assets/onion.png" alt="">
                                 </div>
                                 <!-- text -->
                                  <div>
@@ -171,7 +162,7 @@
                           <div class=" flex items-center justify-around md:w-[250px] w-[200px] h-[100px] bg-[#ffffff] rounded-xl">
                                 <!-- image -->
                                 <div>
-                                    <img class="w-12" src="./c2-assets/delivery.png" alt="">
+                                  <img class="w-16 rounded bg-[#efebe3]" src="./c2-assets/onion.png" alt="">
                                 </div>
                                 <!-- text -->
                                  <div>
@@ -188,7 +179,7 @@
                           <div class=" flex items-center justify-around md:w-[250px] w-[200px] h-[100px] bg-[#ffffff] rounded-xl">
                                 <!-- image -->
                                 <div>
-                                    <img class="w-12" src="./c2-assets/delivery.png" alt="">
+                                  <img class="w-16 rounded bg-[#efebe3]" src="./c2-assets/onion.png" alt="">
                                 </div>
                                 <!-- text -->
                                  <div>
@@ -205,7 +196,7 @@
                           <div class=" flex items-center justify-around md:w-[250px] w-[200px] h-[100px] bg-[#ffffff] rounded-xl">
                                 <!-- image -->
                                 <div>
-                                    <img class="w-12" src="./c2-assets/delivery.png" alt="">
+                                  <img class="w-16 rounded bg-[#efebe3]" src="./c2-assets/potato.png" alt="">
                                 </div>
                                 <!-- text -->
                                  <div>
@@ -222,7 +213,7 @@
                           <div class=" flex items-center justify-around md:w-[250px] w-[200px] h-[100px] bg-[#ffffff] rounded-xl">
                                 <!-- image -->
                                 <div>
-                                    <img class="w-12" src="./c2-assets/delivery.png" alt="">
+                                  <img class="w-16 rounded bg-[#efebe3]" src="./c2-assets/potato.png" alt="">
                                 </div>
                                 <!-- text -->
                                  <div>
@@ -239,7 +230,7 @@
                           <div class=" flex items-center justify-around md:w-[250px] w-[200px] h-[100px] bg-[#ffffff] rounded-xl">
                                 <!-- image -->
                                 <div>
-                                    <img class="w-12" src="./c2-assets/delivery.png" alt="">
+                                  <img class="w-16 rounded bg-[#efebe3]" src="./c2-assets/potato.png" alt="">
                                 </div>
                                 <!-- text -->
                                  <div>
@@ -256,7 +247,7 @@
                           <div class=" flex items-center justify-around md:w-[250px] w-[200px] h-[100px] bg-[#ffffff] rounded-xl">
                                 <!-- image -->
                                 <div>
-                                    <img class="w-12" src="./c2-assets/delivery.png" alt="">
+                                  <img class="w-16 rounded bg-[#efebe3]" src="./c2-assets/onion.png" alt="">
                                 </div>
                                 <!-- text -->
                                  <div>
@@ -273,7 +264,7 @@
                           <div class=" flex items-center justify-around md:w-[250px] w-[200px] h-[100px] bg-[#ffffff] rounded-xl">
                                 <!-- image -->
                                 <div>
-                                    <img class="w-12" src="./c2-assets/delivery.png" alt="">
+                                  <img class="w-16 rounded bg-[#efebe3]" src="./c2-assets/onion.png" alt="">
                                 </div>
                                 <!-- text -->
                                  <div>
@@ -290,7 +281,7 @@
                           <div class=" flex items-center justify-around md:w-[250px] w-[200px] h-[100px] bg-[#ffffff] rounded-xl">
                                 <!-- image -->
                                 <div>
-                                    <img class="w-12" src="./c2-assets/delivery.png" alt="">
+                                  <img class="w-16 rounded bg-[#efebe3]" src="./c2-assets/onion.png" alt="">
                                 </div>
                                 <!-- text -->
                                  <div>
@@ -303,13 +294,75 @@
                                   <h2 class="text-xl font-medium">Onion 1 KG</h2>
                                   <p class="font-medium">$39.99</p>
                                  </div>
-                           </div>
-                         
+                           </div>      
                            </div>
                          </div>
                 </div>
               </div>
         </section>
+
+         <!-- review section -->
+         <section class=" md:max-w-7xl mx-auto py-24 ">
+          <h1 class="text-3xl font-bold text-[#179800] mb-8 ml-4" >Review</h1>
+          <div class=" flex flex-col md:flex-row items-center justify-around">
+          <div>
+            <h2 class="text-5xl font-bold mb-3">4.0</h2>
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+                checked="checked" />
+                <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+                checked="checked" />
+                <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+                checked="checked" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+            <p class="text-xl">35k rating</p>
+        </div>
+        
+        <div class="flex flex-col space-y-5">
+          <progress class="progress w-56" value="0" max="100"></progress>
+          <progress class="progress w-56" value="10" max="100"></progress>
+          <progress class="progress w-56" value="40" max="100"></progress>
+          <progress class="progress w-56" value="70" max="100"></progress>
+          <progress class="progress w-56" value="100" max="100"></progress>
+        </div>
+        <div>
+          <div class="flex gap-2 items-center">
+            <p class="text-2xl font-bold">0.0</p>
+            <p class="text-sm">0 review</p>
+            <p></p>
+          </div>
+          <div class="flex gap-2 items-center">
+            <p class="text-2xl font-bold">2.0</p>
+            <p class="text-sm">800 review</p>
+            <p></p>
+          </div>
+          <div class="flex gap-2 items-center">
+            <p class="text-2xl font-bold">3.0</p>
+            <p class="text-sm">30k review</p>
+            <p></p>
+          </div>
+          <div class="flex gap-2 items-center">
+            <p class="text-2xl font-bold">4.0</p>
+            <p class="text-sm">50k review</p>
+            <p></p>
+          </div>
+     
+        </div>
+        </div>
+
+         </section>
+
         <!-- Arrival & Offers -->
         <section class=" md:max-w-7xl mx-auto py-24 mb-[350px] md:mb-[200px]">
           <h1  class="text-3xl font-bold text-[#179800] mb-8 ml-4" > Arrival & Offers</h1>
@@ -338,15 +391,16 @@
         </div>
         </div>
         </section>
+       
     </main>
     <!-- footer -->
-    <section class="relative">
-      <div class="md:max-w-7xl w-full mx-auto relative">
-          <div class="rounded-xl bg-[#EFEBE3] mx-auto py-12 md:px-[100px] absolute inset-x-0 md:-bottom-[240px] -bottom-[330px] max-w-5xl">
+    <section >
+      <div class="md:max-w-7xl w-full mx-auto relative ">
+          <div class="rounded-xl  bg-[#EFEBE3] mx-auto py-12 md:px-[100px] absolute inset-x-0 md:-bottom-[240px] -bottom-[330px] md:max-w-5xl ">
               <div class="grid md:grid-cols-2 items-center">
                   <!-- Image -->
                   <div class="flex justify-center">
-                      <img src="./c2-assets/vegetable-busket.png" alt="Vegetable Basket">
+                      <img class="w-40" src="./c2-assets/vegetable-busket.png" alt="Vegetable Basket">
                   </div>
                   <!-- Subscription Form -->
                   <div class="flex flex-col gap-6 justify-center p-5 items-center md:items-start">
@@ -395,8 +449,5 @@
           </div>
       </footer>
   </section>
-  
-
-  
   </body>
 </html>
