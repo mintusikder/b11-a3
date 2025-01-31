@@ -59,12 +59,14 @@
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-              <li><a>Product</a></li>
+              <li><a class="text-[#111111] hover:text-[#179800] font-[400]">Product</a></li>
               <li><a>Services</a></li>
               <li><a>Contact us</a></li>
             </ul>
           </div>
           <div class="navbar-end">
+            <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+            <i class="fa-solid fa-cart-shopping px-4 text-2xl"></i>
             <a class="btn mr-4 border border-green-600 px-8">Login</a>
             <a class=" btn text-white bg-[#179800] px-8 register">Register</a>
           </div>
@@ -73,10 +75,10 @@
         <div class="mt-12">
           <!-- text contain -->
           <div  class="text-center mb-5">
-            <h1 class="text-4xl font-bold mb-5">Freshness <span class="text-[#179800]">You Can</span> <br> <span class="text-[#179800]">Count</span> On, Prices You’ll Love!</h1>
+            <h1 class="text-4xl font-bold mb-5 animate-bounce">Freshness <span class="text-[#179800] ">You Can</span> <br> <span class="text-[#179800]">Count</span> On, Prices You’ll Love!</h1>
             <p>
-              Shop your daily essentials at unbeatable prices. From fresh produce
-              to pantry <br> staples, we’ve got you covered every day!
+              Shop your daily essentials at unbeatable prices. From fresh <br> produce
+              to pantry  staples, we’ve got you covered every day!
             </p>
           </div>
           <!-- banner img -->
@@ -309,7 +311,7 @@
               </div>
         </section>
         <!-- Arrival & Offers -->
-        <section class=" md:max-w-7xl mx-auto py-24">
+        <section class=" md:max-w-7xl mx-auto py-24 mb-[350px] md:mb-[200px]">
           <h1  class="text-3xl font-bold text-[#179800] mb-8 ml-4" > Arrival & Offers</h1>
         <div class="flex md:flex-row flex-col gap-6">
             <!-- 20% off -->
@@ -338,38 +340,63 @@
         </section>
     </main>
     <!-- footer -->
-    <footer class=" w-[100%] h-[600px] bg-[#179800]">
-<!-- Get Grocery News! -->
-      <div class="flex flex-col md:flex-row items-center justify-around  h-[400px] bg-[#efebe3] md:max-w-7xl mx-auto rounded-xl">
-        <div>
-              <img src="./c2-assets/vegetable-busket.png" alt="">
-        </div>
-        <div class="space-y-4">
-            <h1 class="text-2xl font-bold">Get Grocery News!</h1>
-            <p>Exclusive training tips, ticks, product deals and more.</p>
-            <input  class="block py-3 w-full px-2 rounded-md" type="text" placeholder="Enter email....">
-          <button class="btn px-6 text-white bg-[#179800] ">Subscribe</button>
-        </div>
-      </div>
- 
-<!-- footer bottom -->
-      <div class="flex justify-around md:items-end space-y-6 flex-col md:flex-row py-8 md:py-0">
-          <div class="text-white">
-            <img src="./c2-assets/logo-footer.png" alt="">
-            <p >Discover a world of treats, toys, and <br> essentials handpicked for your furry friends</p>
-          </div>
-          <div class="text-white">
-            <p>Product</p>
-            <p>Services</p>
-            <p>Contact us</p>
-          </div>
-          <div class="text-white">
-            <p>Follow Us</p>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram px-3"></i>
-            <i class="fa-brands fa-linkedin"></i>
+    <section class="relative">
+      <div class="md:max-w-7xl w-full mx-auto relative">
+          <div class="rounded-xl bg-[#EFEBE3] mx-auto py-12 md:px-[100px] absolute inset-x-0 md:-bottom-[240px] -bottom-[330px] max-w-5xl">
+              <div class="grid md:grid-cols-2 items-center">
+                  <!-- Image -->
+                  <div class="flex justify-center">
+                      <img src="./c2-assets/vegetable-busket.png" alt="Vegetable Basket">
+                  </div>
+                  <!-- Subscription Form -->
+                  <div class="flex flex-col gap-6 justify-center p-5 items-center md:items-start">
+                      <h2 class="md:text-[36px] text-[22px] font-semibold text-[#179800] md:text-[#111111]">Get Grocery News!</h2>
+                      <p class="font-normal text-xl text-[#474747] text-center md:text-left">
+                          Exclusive training tips, tricks, product deals, and more.
+                      </p>
+                      <input type="text" placeholder="Enter email..." class="px-3 py-3 rounded-md bg-white text-[#C4C4C4] text-[16px] w-full md:w-[80%] border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#179800]">
+                      <button class="border-[#179800] border-[1.5px] py-[8px] px-[25px] rounded-md bg-[#179800] font-medium text-white hover:bg-white hover:text-[#179800] transition-all duration-300">Subscribe</button>
+                  </div>
+              </div>  
           </div>
       </div>
-    </footer>
+  
+      <!-- Footer -->
+      <footer class="bg-[#179800]">
+          <div class="max-w-7xl mx-auto pt-[390px] md:pt-[350px] pb-[140px] p-4">
+              <div class="grid md:grid-cols-3 text-white gap-8">
+                  <!-- Logo & Description -->
+                  <div class="flex md:justify-end md:items-end pr-5 pb-2">
+                      <div>
+                          <img src="./c2-assets/logo-footer.png" alt="Footer Logo">
+                          <p>Discover a world of treats, toys, and essentials handpicked for your furry friends.</p>
+                      </div>
+                  </div>
+                  <!-- Links -->
+                  <div class="flex md:justify-end md:items-end pr-5 pb-2">
+                      <div class="space-y-4">
+                          <p>Product</p>
+                          <p>Services</p>
+                          <p>Contact us</p>
+                      </div>
+                  </div>
+                  <!-- Social Media Icons -->
+                  <div class="flex md:justify-end md:items-end pr-5 pb-2">
+                      <div>            
+                          <p class="mb-3">Follow Us</p>
+                          <div class="flex gap-4">
+                              <i class="fa-brands fa-facebook"></i>
+                              <i class="fa-brands fa-instagram"></i>
+                              <i class="fa-brands fa-linkedin"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+  </section>
+  
+
+  
   </body>
 </html>
